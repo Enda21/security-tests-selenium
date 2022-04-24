@@ -64,16 +64,11 @@ public class CrossSiteScripting {
       //We check the console logs as not to break the test and make it flakey
       Assert.assertFalse(errorLog.contains("XSS") );
     }
-    //Thread.sleep(5000);
-
-    }
-
-
+  }
 
   @AfterMethod
   void tearDown(){
     driver.quit();
   }
-
 
 }
